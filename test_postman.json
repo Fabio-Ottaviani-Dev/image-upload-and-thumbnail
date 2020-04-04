@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "5a8059a8-3bd6-4e5d-9927-acd1096bb046",
+		"name": "Upload File",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "File to upload",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "name",
+							"value": "This is a test value  - (^-^)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/file-upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"file-upload"
+					]
+				},
+				"description": "base upload file for API"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
