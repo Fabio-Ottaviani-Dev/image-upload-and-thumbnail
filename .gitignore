@@ -1,4 +1,11 @@
-image/
+
+
+# exclude everything
+image/*
+
+# exception to the rule
+!image/.gitkeep
+
 # ----------------------------------------------------------------------
 
 # Byte-compiled / optimized / DLL files
