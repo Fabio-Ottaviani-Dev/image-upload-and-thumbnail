@@ -21,7 +21,7 @@ class imageThumbnail:
     def get_unique_filename(self):
         random_int = random.randint(0, 99999999)
         datetime_now = datetime.now()
-        return datetime_now.strftime('%m%d%Y-%H%M%S-{}'.format(random_int))
+        return datetime_now.strftime('%m%d%Y-%H%M%S-%f{}'.format(random_int))
 
     def upload(self, file):
         if file and self.allowed_file(file.filename):
